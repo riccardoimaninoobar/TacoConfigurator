@@ -1,38 +1,46 @@
-📌 Project Overview
-TacoConfigurator is an OWL/RDF ontology designed to model:
-✅ Taco ingredients (tortillas, meats, veggies, sauces)
-✅ Nutritional properties (calories, price, preparation time)
-✅ Spiciness levels (Mild 🌶️ → Medium 🌶️🌶️ → Hot 🌶️🌶️🌶️)
+# 🌮 TacoConfigurator
 
-Perfect for:
+**TacoConfigurator** è un'**ontologia OWL/RDF** progettata per modellare:  
+✅ **Ingredienti dei tacos** (tortillas, carni, verdure, salse)  
+✅ **Proprietà nutrizionali** (calorie, prezzo, tempo di preparazione)  
+✅ **Livelli di piccantezza** (Mild 🌶️ → Medium 🌶️🌶️ → Hot 🌶️🌶️🌶️)  
 
-🍽️ Digital menu systems
+Perfetto per:  
+🍽️ **Sistemi di menu digitali**  
+📱 **App di raccomandazione alimentare**  
+🔍 **Strumenti di analisi nutrizionale**
 
-📱 Food recommendation apps
+---
 
-🔍 Nutritional analysis tools
+## 🛠️ Specifiche Tecniche
 
-🛠️ Technical Specifications
-plaintext
-Copy
-Format: OWL 2 (RDF/XML)  
-Developed with: Protégé 5.5.0  
-License: MIT  
-SPARQL Compatible: Yes ✅
-📂 Ontology Structure
-🧩 Main Classes
-Class	Description
-Taco	Complete taco dish
-TacoTortilla	Base (corn/flour/crunchy)
-TacoFilling	Ingredients (meat/veggies/sauces)
-Spiciness	Heat scale (Mild/Medium/Hot)
-🔗 Key Properties
-mermaid
-Copy
+- **Formato**: OWL 2 (RDF/XML)  
+- **Sviluppato con**: Protégé 5.5.0  
+- **Licenza**: MIT  
+- **Compatibile con SPARQL**: Sì ✅  
+
+---
+
+## 📂 Struttura dell'Ontologia
+
+### 🧩 Classi Principali
+
+| **Classe**       | **Descrizione**                     |
+|-------------------|-------------------------------------|
+| `Taco`           | Piatto completo di taco            |
+| `TacoTortilla`   | Base (mais, farina, croccante)      |
+| `TacoFilling`    | Ingredienti (carne, verdure, salse) |
+| `Spiciness`      | Scala di piccantezza (Mild/Medium/Hot) |
+
+### 🔗 Proprietà Chiave
+
+```mermaid
 graph LR
   Taco --hasTortilla--> Tortilla
   Taco --hasFilling--> Filling
   Filling --hasSpiciness--> Spiciness
+```
+
 🚀 Getting Started
 Clone the repository:
 
