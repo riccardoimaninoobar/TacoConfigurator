@@ -1,38 +1,38 @@
 # 🌮 TacoConfigurator
 
-**TacoConfigurator** è un'**ontologia OWL/RDF** progettata per modellare:  
-✅ **Ingredienti dei tacos** (tortillas, carni, verdure, salse)  
-✅ **Proprietà nutrizionali** (calorie, prezzo, tempo di preparazione)  
-✅ **Livelli di piccantezza** (Mild 🌶️ → Medium 🌶️🌶️ → Hot 🌶️🌶️🌶️)  
+**TacoConfigurator** is an **OWL/RDF ontology** designed to model:  
+✅ **Taco ingredients** (tortillas, meats, veggies, sauces)  
+✅ **Nutritional properties** (calories, price, preparation time)  
+✅ **Spiciness levels** (Mild 🌶️ → Medium 🌶️🌶️ → Hot 🌶️🌶️🌶️)  
 
-Perfetto per:  
-🍽️ **Sistemi di menu digitali**  
-📱 **App di raccomandazione alimentare**  
-🔍 **Strumenti di analisi nutrizionale**
-
----
-
-## 🛠️ Specifiche Tecniche
-
-- **Formato**: OWL 2 (RDF/XML)  
-- **Sviluppato con**: Protégé 5.5.0  
-- **Licenza**: MIT  
-- **Compatibile con SPARQL**: Sì ✅  
+Perfect for:  
+🍽️ **Digital menu systems**  
+📱 **Food recommendation apps**  
+🔍 **Nutritional analysis tools**
 
 ---
 
-## 📂 Struttura dell'Ontologia
+## 🛠️ Technical Specifications
 
-### 🧩 Classi Principali
+- **Format**: OWL 2 (RDF/XML)  
+- **Developed with**: Protégé 5.5.0  
+- **License**: MIT  
+- **SPARQL Compatible**: Yes ✅  
 
-| **Classe**       | **Descrizione**                     |
-|-------------------|-------------------------------------|
-| `Taco`           | Piatto completo di taco            |
-| `TacoTortilla`   | Base (mais, farina, croccante)      |
-| `TacoFilling`    | Ingredienti (carne, verdure, salse) |
-| `Spiciness`      | Scala di piccantezza (Mild/Medium/Hot) |
+---
 
-### 🔗 Proprietà Chiave
+## 📂 Ontology Structure
+
+### 🧩 Main Classes
+
+| **Class**         | **Description**                   |
+|--------------------|-----------------------------------|
+| `Taco`            | Complete taco dish               |
+| `TacoTortilla`    | Base (corn, flour, crunchy)       |
+| `TacoFilling`     | Ingredients (meat, veggies, sauces) |
+| `Spiciness`       | Heat scale (Mild/Medium/Hot)      |
+
+### 🔗 Key Properties
 
 ```mermaid
 graph LR
@@ -61,7 +61,7 @@ Copy
 SELECT ?taco WHERE {
   ?taco a :Taco .
   FILTER NOT EXISTS { ?taco :hasFilling ?filling .
-                     ?filling a :MeatFilling }
+                      ?filling a :MeatFilling }
 }
 📊 Example Data
 Taco Type	Calories	Price	Spiciness
