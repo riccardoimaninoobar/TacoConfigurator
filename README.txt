@@ -5,11 +5,6 @@
 ✅ **Nutritional properties** (calories, price, preparation time)  
 ✅ **Spiciness levels** (Mild 🌶️ → Medium 🌶️🌶️ → Hot 🌶️🌶️🌶️)  
 
-Perfect for:  
-🍽️ **Digital menu systems**  
-📱 **Food recommendation apps**  
-🔍 **Nutritional analysis tools**
-
 ---
 
 ## 🛠️ Technical Specifications
