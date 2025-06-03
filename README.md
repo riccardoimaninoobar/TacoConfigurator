@@ -22,6 +22,4 @@ TacoConfigurator è un'ontologia basata su **OWL** che modella **ingredienti, to
 ## 📜 **Licenza**  
 ⚖️ **MIT License** 
 
----  
-🔗 *Scopri di più nell'[ontologia completa](TacoConfigurator.rdf)!*  
 
